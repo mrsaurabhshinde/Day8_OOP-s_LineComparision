@@ -11,7 +11,7 @@ public class LineComparison
 
         System.out.println("Welcome To Line Comparison Program");
 
-        Scanner S = new Scanner(System.in);    //create object for scanner class
+        Scanner S = new Scanner(System.in);   //create object for scanner class
 
         System.out.println("Enter x Co-ordinate Number of First Point");
         int x1 = S.nextInt();
@@ -51,11 +51,14 @@ public class LineComparison
 
         else
             System.out.println("Both Line Are  Equal");
-
+        System.out.println(Double.compare(Length_Of_Line1, Length_Of_Line2));
     }
 
-    public static void main(String[] args) {      //main method
+    //main method
+
+    public static void main(String[] args) {
         lineComparision();
         compareLineLength();
+
     }
 }
